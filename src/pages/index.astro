@@ -1,0 +1,390 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+---
+
+<MainLayout title="Titel">
+  <article class="mx-14">
+    <!-- Hero section -->
+
+    <section class="grid md:grid-cols-3 gap-8 p-7 items-center">
+      <div class="col-span-2 container md:mx-auto">
+        <img
+          class="w-full h-auto object-cover hover:animate-pulse"
+          src="/src/assets/images/kobenhavnerbilleder-sten-simons.jpg"
+          alt=""
+        />
+      </div>
+      <div class="md:">
+        <h1 class="text-4xl pb-4">
+          Københavnerbilleder - en guide til hipster foto
+        </h1>
+        <h2 class="text-2xl">Af Sten Simons</h2>
+        <ul>
+          <li>Forfatter: Sten Simons</li>
+          <li>Antal sider: 344</li>
+          <li>Forlag: Mellem Linjerne</li>
+          <li>ISBN: 987-6-987654-32-1</li>
+          <li>Pris: 399.-</li>
+        </ul>
+
+        <div class="pt-5">
+          <Button variant="primary" size="medium">Køb her</Button>
+        </div>
+      </div>
+    </section>
+
+    <!-- info om bog -->
+    <section class="m-7 grid md:grid-cols-3">
+      <h3 class="col-start-2 col-span-1 flex text-xl font-semibold">
+        Københavnerbilleder er de danske streetfotografers bibel:
+      </h3>
+      <p class="col-start-2 col-span-1 flex">
+        Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
+        væsentlige aspekter af streetfotografering fra grundlæggende teknik til
+        kreative eksperimenter. Alt sammen krydret med masser af inspirerende
+        fotos. God læselyst!
+      </p>
+    </section>
+
+    <!-- billeder af bogen -->
+
+    <section class="grid sm:grid-cols-3">
+      <div class="grid justify-items-center">
+        <img
+          src="/src/assets/images/kobenhavnerbilleder_aaben_venstre.jpg"
+          alt=""
+        />
+      </div>
+      <div class="grid justify-items-center">
+        <img
+          src="/src/assets/images/kobenhavnerbilleder-sten-simons.jpg"
+          alt=""
+        />
+      </div>
+      <div class="grid justify-items-center">
+        <img src="/src/assets/images/kobenhavnerbilleder_oppefra.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- kapitler -->
+
+    <section class="mx-auto mb-12">
+      <h2 class="flex text-3xl mb-10">Bogens Kapitler</h2>
+
+      <div class="grid sm:grid-cols-2 place-items-center gap-10">
+        <div>
+          <h3 class="">Kapitel 1 - Intro til street fotos</h3>
+          <p class="">
+            Hvad er street foto? Det handler i bund og grund om at skyde byens
+            liv og byens geometri (urban geometry). I dette kapitel får du en
+            grundig intro til hvad street foto er og et overblik over nogen af
+            de kendte street-fotografer. Alt krydret med en masse gode eksempler
+            på street fotos.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="">Kapitel 5 - Analog street foto</h3>
+          <p class="">
+            Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
+            end digital. Det signalerer entusiasme. Nogle teknikker og
+            fremgangsmåder egner sig bedst til analog street foto. I dette
+            kapitel får du en række tips og tricks til analog street-foto.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="">Kapitel 2 - Om at skyde street</h3>
+          <p class="">
+            Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på
+            gaderne og prøve det! I dette kapitel får du en teknisk indføring i
+            hvordan du bedst skyder street. Uanset om du er begynder eller
+            professionel, er der mange gode tekniske tips og tricks til
+            street-skyderiet.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="">Kapitel 6 - Om at skyde sort/hvid</h3>
+          <p class="">
+            Alle street-fotografer skyder sort/hvid nu og da. Nogen altid.
+            Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad
+            adskiller sort/hvid fra farvefotografering? Her får du en række tips
+            og tricks til sort/hvid fotografering.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="">Kapitel 3 - Om at finde det rette motiv</h3>
+          <p class="">
+            Indimellem er man heldig, andre gange kommer man hjem helt uden gode
+            motiver. Med et par tips og tricks til at finde de rette motiver,
+            stiger chancen gevaldigt for at fange de gode motiver.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="">Kapitel 7 - Kreative teknikker</h3>
+          <p class="">
+            Dobbelteksponeringer, ICM (intentional camera moves), smadrede
+            objektiver, gamle filmruller og alle mulige andre, spændende
+            kreative teknikker kan løfte dine fotografier fra at være kedelige
+            dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk
+            ned i dette kapitel om eksperimenterende teknikker!
+          </p>
+        </div>
+
+        <div>
+          <h3 class="">Kapitel 4 - Digital street foto</h3>
+          <p class="">
+            De fleste af os skyder oftest digitalt fordi det er billigere og
+            nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til
+            digital street foto. I dette kapitel får du en række tips og tricks
+            til digital street-foto.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="">Kapitel 8 - Kom helt tæt på!</h3>
+          <p class="">
+            Street foto handler om at fotografere livet på gaden - men tør du at
+            gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt
+            øve dig, for det er det der vil gøre dig til en bedre
+            street-fotograf…
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- anmeldelser -->
+    <section class="mx-auto mb-12">
+      <h2 class="text-3xl mb-5">Anmeldelser</h2>
+      <div class="grid gap-8 lg:grid-cols-3 lg:gap-5">
+        <div>
+          <h3 class="text-xl m-4">6 ud af 7 stjerner</h3>
+          <p class="pt-2">
+            Københavnerbilleder er en grundig introduktion til at skyde billeder
+            med retro-kant. Hvad enten du er har arbejdet med foto siden
+            135-filmen kom på markedet, du kun har skudt digitalt eller er helt
+            nybegynder, er der masser af tips og tricks i bogen. <br /> - Hanne
+            Hovgaard, Berlingeren
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl m-4">5 ud af 6 stjerner</h3>
+          <p class="pt-2">
+            Teksten er underholdende, og billederne er sku’ flotte. Hvad mere
+            skal man sige om en fotobog? <br /> - Kim Kloggaard,
+            Fotojournalen.dk
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl m-4">6 ud af 6 stjerner</h3>
+          <p class="pt-2">
+            Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje
+            fotobog er klart den bedste - her er han for alvor i sit rette
+            element, meget bedre end “studiefotografering som begyndere.”
+            Tillykke - godt arbejde. <br /> - Volmer Hansen, Lukkertiden.dk
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- billeder af bogen -->
+
+    <section class="grid sm:grid-cols-3 gap-4">
+      <div class="grid justify-items-center">
+        <img
+          class="w-full aspect-[2/2]"
+          src="/src/assets/images/forar.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="grid justify-items-center">
+        <img
+          class="w-full aspect-[2/2]"
+          src="/src/assets/images/orestad-til-islands-brygge-pentax-auto-110-24.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="grid justify-items-center">
+        <img
+          class="w-full aspect-[2/2]"
+          src="/src/assets/images/orestad-til-islands-brygge-pentax-auto-110-14.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="grid justify-items-center">
+        <img
+          class="w-full aspect-[2/2]"
+          src="/src/assets/images/orestad-til-islands-brygge-pentax-auto-110-8.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="grid justify-items-center">
+        <img
+          class="w-full aspect-[2/2]"
+          src="/src/assets/images/tur.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="grid justify-items-center">
+        <img
+          class="w-full aspect-[2/2]"
+          src="/src/assets/images/vinter1.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- om forfatteren -->
+
+    <section>
+      <h2 class="text-3xl pb-4 m-2 mt-12">Forfatteren</h2>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div class="flex justify-start">
+          <img
+            class="w-full aspect-[2/2] object-cover"
+            src="/src/assets/images/forfatter.jpg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col justify-center">
+          <h3 class="m-2 text-xl mb-10">Sten Simons</h3>
+          <p class="m-3">
+            Sten Simons har en lang foto-karriere bag sig. Det hele startede i
+            00’erne, da han gik rundt i Pisserenden for at fotografere
+            ungdommens forfald. Det ledte til en række udstillinger, og blev
+            senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra
+            nattelivet.” Derefter tog karrieren fart: Han blev fotojournalist og
+            dokumenterede en masse dagligdagsstof fra Amager på dagbladet
+            “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og
+            har skrevet et utal af bøger, herunder bestsellerne Scener fra
+            S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for
+            evnesvage.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="w-full max-w-md">
+        <!-- FORM -->
+        <div class="font-semibold text-2xl mb-5 mt-12 text-black text-center">
+          <h1>KØB BOGEN</h1>
+        </div>
+
+        <form class="mx-3 items-center text-black">
+          <div class="py-3">
+            <label for="antal" class="block">Antal</label>
+            <input
+              type="number"
+              id="antal"
+              placeholder="1"
+              class="border border-black bg-white text-black w-full"
+            />
+            <!-- navn -->
+            <div class="py-3">
+              <label for="navn" class="block">Navn</label>
+              <input
+                type="text"
+                id="navn"
+                placeholder="Peter Petersen"
+                class="border border-black bg-white text-black w-full"
+              />
+            </div>
+          </div>
+
+          <!-- levering -->
+
+          <div class="py-3">
+            <span>Levering</span>
+            <input
+              name="levering"
+              type="radio"
+              id="postnord"
+              class="text-black focus:ring-black"
+            />
+            <label for="postnord" class="ml-1">PostNord</label>
+            <input
+              type="radio"
+              id="afhent"
+              name="levering"
+              class="text-black focus:ring-black"
+            />
+            <label for="afhent" class="ml-1">Afhent selv</label>
+
+            <!-- adresse -->
+
+            <div class="py-3">
+              <label for="adresse" class="block">Adresse</label>
+              <input
+                type="text"
+                name="adresse"
+                id="adresse"
+                class="border border-black bg-white text-black w-full"
+              />
+            </div>
+
+            <!-- email -->
+            <div class="py-3">
+              <label for="email" class="block">E-mail</label>
+              <input
+                type="email"
+                placeholder="e@mail.dk"
+                class="border border-black bg-white text-black w-full"
+              />
+            </div>
+
+            <!-- postnummer -->
+            <div class="py-3">
+              <label for="postnummer" class="block">Postnummer & by</label>
+              <input
+                type="text"
+                placeholder="2000"
+                class="border border-black bg-white text-black mb-2 w-full"
+              />
+              <div>
+                <input
+                  type="text"
+                  placeholder="København"
+                  class="border border-black bg-white text-black w-full"
+                />
+              </div>
+            </div>
+            <!-- telefon -->
+            <div class="py-3">
+              <label for="tel" class="block">Telefon</label>
+              <input
+                type="tel"
+                placeholder="24 24 24 24"
+                class="border border-black bg-white text-black w-full"
+              />
+            </div>
+
+            <!-- nyhedsbrev -->
+            <div class="py-3">
+              <label for="checkbox" class="block">Nyhedsbrev</label>
+              <input type="checkbox" class="text-black focus:ring-black" />
+               Ja tak til nyhedsbrev
+            </div>
+
+            <!-- knap -->
+            <div class="mt-6">
+              <Button px-4 w-full>Send bestilling</Button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </article>
+</MainLayout>
